@@ -10,6 +10,8 @@
 #import "Student.h"
 #import "People.h"
 #import "UIButton+Address.h"
+#import "UIViewController+Tracking.h"
+#import "NSNotificationCenter+Help.h"
 
 @interface ViewController ()
 
@@ -30,6 +32,21 @@
     NSString *address = btn.address;
 
     
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(test:) name:@"notifcation_ZGJ" object:nil];
+
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    NSLog(@"====old===========");
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [[NSNotificationCenter defaultCenter] postNotificationName:@"notifcation_ZGJ" object:nil];
+//    });
+}
+
+- (void)test:(NSNotification *)cation
+{
+    NSLog(@"cation==========");
 }
 
 - (void)didReceiveMemoryWarning {

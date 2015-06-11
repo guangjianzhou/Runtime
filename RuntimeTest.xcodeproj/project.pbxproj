@@ -17,6 +17,9 @@
 		B1CBF6751B291587007E9AC9 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6721B291587007E9AC9 /* Student.m */; };
 		B1CBF6761B291587007E9AC9 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6741B291587007E9AC9 /* People.m */; };
 		B1CBF67C1B2927D1007E9AC9 /* UIButton+Address.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF67B1B2927D1007E9AC9 /* UIButton+Address.m */; };
+		B1CBF67F1B292C59007E9AC9 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */; };
+		B1CBF6821B293523007E9AC9 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6811B293523007E9AC9 /* JRSwizzle.m */; };
+		B1CBF6881B2939DF007E9AC9 /* NSNotificationCenter+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		B1CBF6741B291587007E9AC9 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		B1CBF67A1B2927D1007E9AC9 /* UIButton+Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Address.h"; sourceTree = "<group>"; };
 		B1CBF67B1B2927D1007E9AC9 /* UIButton+Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Address.m"; sourceTree = "<group>"; };
+		B1CBF67D1B292C59007E9AC9 /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
+		B1CBF6801B293523007E9AC9 /* JRSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		B1CBF6811B293523007E9AC9 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		B1CBF6861B2939DF007E9AC9 /* NSNotificationCenter+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Help.h"; sourceTree = "<group>"; };
+		B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Help.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,8 @@
 				B1CBF6521B291577007E9AC9 /* ViewController.h */,
 				B1CBF6531B291577007E9AC9 /* ViewController.m */,
 				B1CBF6551B291577007E9AC9 /* Main.storyboard */,
+				B1CBF6801B293523007E9AC9 /* JRSwizzle.h */,
+				B1CBF6811B293523007E9AC9 /* JRSwizzle.m */,
 				B1CBF6711B291587007E9AC9 /* Student.h */,
 				B1CBF6721B291587007E9AC9 /* Student.m */,
 				B1CBF6731B291587007E9AC9 /* People.h */,
@@ -104,6 +115,10 @@
 				B1CBF64B1B291577007E9AC9 /* Supporting Files */,
 				B1CBF67A1B2927D1007E9AC9 /* UIButton+Address.h */,
 				B1CBF67B1B2927D1007E9AC9 /* UIButton+Address.m */,
+				B1CBF67D1B292C59007E9AC9 /* UIViewController+Tracking.h */,
+				B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */,
+				B1CBF6861B2939DF007E9AC9 /* NSNotificationCenter+Help.h */,
+				B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */,
 			);
 			path = RuntimeTest;
 			sourceTree = "<group>";
@@ -236,10 +251,13 @@
 			files = (
 				B1CBF6541B291577007E9AC9 /* ViewController.m in Sources */,
 				B1CBF6511B291577007E9AC9 /* AppDelegate.m in Sources */,
+				B1CBF6821B293523007E9AC9 /* JRSwizzle.m in Sources */,
 				B1CBF6761B291587007E9AC9 /* People.m in Sources */,
 				B1CBF64E1B291577007E9AC9 /* main.m in Sources */,
 				B1CBF67C1B2927D1007E9AC9 /* UIButton+Address.m in Sources */,
+				B1CBF67F1B292C59007E9AC9 /* UIViewController+Tracking.m in Sources */,
 				B1CBF6751B291587007E9AC9 /* Student.m in Sources */,
+				B1CBF6881B2939DF007E9AC9 /* NSNotificationCenter+Help.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +450,7 @@
 				B1CBF66D1B291577007E9AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1CBF66E1B291577007E9AC9 /* Build configuration list for PBXNativeTarget "RuntimeTestTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +459,7 @@
 				B1CBF6701B291577007E9AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

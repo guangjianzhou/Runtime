@@ -25,5 +25,9 @@ static char keyIdentifier;
     objc_setAssociatedObject(self, &keyIdentifier, addressName, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+//+ (void)load
+//{
+//    [super load];
+//}
 
 @end
