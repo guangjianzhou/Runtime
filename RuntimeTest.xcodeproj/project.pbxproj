@@ -20,6 +20,7 @@
 		B1CBF67F1B292C59007E9AC9 /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */; };
 		B1CBF6821B293523007E9AC9 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6811B293523007E9AC9 /* JRSwizzle.m */; };
 		B1CBF6881B2939DF007E9AC9 /* NSNotificationCenter+Help.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */; };
+		B1EB04151B44CA16008958A0 /* UILabel+Name.m in Sources */ = {isa = PBXBuildFile; fileRef = B1EB04141B44CA16008958A0 /* UILabel+Name.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		B1CBF6811B293523007E9AC9 /* JRSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
 		B1CBF6861B2939DF007E9AC9 /* NSNotificationCenter+Help.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+Help.h"; sourceTree = "<group>"; };
 		B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+Help.m"; sourceTree = "<group>"; };
+		B1EB04131B44CA16008958A0 /* UILabel+Name.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Name.h"; sourceTree = "<group>"; };
+		B1EB04141B44CA16008958A0 /* UILabel+Name.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Name.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,19 +109,11 @@
 				B1CBF6551B291577007E9AC9 /* Main.storyboard */,
 				B1CBF6801B293523007E9AC9 /* JRSwizzle.h */,
 				B1CBF6811B293523007E9AC9 /* JRSwizzle.m */,
-				B1CBF6711B291587007E9AC9 /* Student.h */,
-				B1CBF6721B291587007E9AC9 /* Student.m */,
-				B1CBF6731B291587007E9AC9 /* People.h */,
-				B1CBF6741B291587007E9AC9 /* People.m */,
+				B1EB040F1B44C87D008958A0 /* Category */,
+				B1EB040E1B44C871008958A0 /* Model */,
 				B1CBF6581B291577007E9AC9 /* Images.xcassets */,
 				B1CBF65A1B291577007E9AC9 /* LaunchScreen.xib */,
 				B1CBF64B1B291577007E9AC9 /* Supporting Files */,
-				B1CBF67A1B2927D1007E9AC9 /* UIButton+Address.h */,
-				B1CBF67B1B2927D1007E9AC9 /* UIButton+Address.m */,
-				B1CBF67D1B292C59007E9AC9 /* UIViewController+Tracking.h */,
-				B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */,
-				B1CBF6861B2939DF007E9AC9 /* NSNotificationCenter+Help.h */,
-				B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */,
 			);
 			path = RuntimeTest;
 			sourceTree = "<group>";
@@ -147,6 +142,32 @@
 				B1CBF6661B291577007E9AC9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1EB040E1B44C871008958A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1CBF6711B291587007E9AC9 /* Student.h */,
+				B1CBF6721B291587007E9AC9 /* Student.m */,
+				B1CBF6731B291587007E9AC9 /* People.h */,
+				B1CBF6741B291587007E9AC9 /* People.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B1EB040F1B44C87D008958A0 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B1CBF67A1B2927D1007E9AC9 /* UIButton+Address.h */,
+				B1CBF67B1B2927D1007E9AC9 /* UIButton+Address.m */,
+				B1CBF67D1B292C59007E9AC9 /* UIViewController+Tracking.h */,
+				B1CBF67E1B292C59007E9AC9 /* UIViewController+Tracking.m */,
+				B1CBF6861B2939DF007E9AC9 /* NSNotificationCenter+Help.h */,
+				B1CBF6871B2939DF007E9AC9 /* NSNotificationCenter+Help.m */,
+				B1EB04131B44CA16008958A0 /* UILabel+Name.h */,
+				B1EB04141B44CA16008958A0 /* UILabel+Name.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +277,7 @@
 				B1CBF64E1B291577007E9AC9 /* main.m in Sources */,
 				B1CBF67C1B2927D1007E9AC9 /* UIButton+Address.m in Sources */,
 				B1CBF67F1B292C59007E9AC9 /* UIViewController+Tracking.m in Sources */,
+				B1EB04151B44CA16008958A0 /* UILabel+Name.m in Sources */,
 				B1CBF6751B291587007E9AC9 /* Student.m in Sources */,
 				B1CBF6881B2939DF007E9AC9 /* NSNotificationCenter+Help.m in Sources */,
 			);

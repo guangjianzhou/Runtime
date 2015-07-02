@@ -12,6 +12,7 @@
 #import "UIButton+Address.h"
 #import "UIViewController+Tracking.h"
 #import "NSNotificationCenter+Help.h"
+#import "UILabel+Name.h"
 
 @interface ViewController ()
 
@@ -30,9 +31,13 @@
     UIButton *btn = [[UIButton alloc] init];
     btn.address = @"菊花校区";
     NSString *address = btn.address;
-
+    NSLog(@"address====%@",address);
     
 //    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(test:) name:@"notifcation_ZGJ" object:nil];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.labelName = @"new Label";
+    NSString *name = label.labelName;
 
 }
 
@@ -42,6 +47,11 @@
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [[NSNotificationCenter defaultCenter] postNotificationName:@"notifcation_ZGJ" object:nil];
 //    });
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    NSLog(@"----触摸--");
 }
 
 - (void)test:(NSNotification *)cation
