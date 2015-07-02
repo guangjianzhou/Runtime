@@ -24,7 +24,4 @@
 {
 //    NSLog(@"=======name = %@===huhu",name);
 }
-
-
-
 @end
