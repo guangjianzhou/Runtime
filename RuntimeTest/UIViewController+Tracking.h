@@ -10,4 +10,6 @@
 
 @interface UIViewController (Tracking)
 
+- (void)xxx_viewWillAppear:(BOOL)animated;
+
 @end

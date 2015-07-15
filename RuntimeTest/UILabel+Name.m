@@ -22,8 +22,8 @@
 //注：objc_removeAssociatedObjects 函数我们一般是用不上的，因为这个函数会移除一个对象的所有关联对象，将该对象恢复成“原始”状态。这样做就很有可能把别人添加的关联对象也一并移除，这并不是我们所希望的。所以一般的做法是通过给 objc_setAssociatedObject 函数传入 nil 来移除某个已有的关联对象。
 
 //key 值
-static char kAssociateKey;
-static void *kAssociatedObjectKey;
+static char kAssociateKey; //1
+static void *kAssociatedObjectKey;//2
 //3用Selector，实用getter方法的名称作为key值
 //@selector(labelName);
 

@@ -13,6 +13,8 @@
 #import "UIViewController+Tracking.h"
 #import "NSNotificationCenter+Help.h"
 #import "UILabel+Name.h"
+#import <objc/runtime.h>
+#import "JRSwizzle.h"
 
 @interface ViewController ()
 
@@ -22,7 +24,10 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+
+    
     NSArray *properties = [Student allProperties];
     
     People *p = [[People alloc] init];
@@ -38,12 +43,17 @@
     UILabel *label = [[UILabel alloc] init];
     label.labelName = @"new Label";
     NSString *name = label.labelName;
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    [super viewWillAppear:animated];
     NSLog(@"====old===========");
+    
+    
+    
+    
+    
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [[NSNotificationCenter defaultCenter] postNotificationName:@"notifcation_ZGJ" object:nil];
 //    });
